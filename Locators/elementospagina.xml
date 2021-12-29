@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="campo_email">email</entry>
+<entry key="campo_senha">password</entry>
+
+<entry key="butaoLogin">//*[@id="root"]/main/section/div[2]/div/form/button</entry>
+<entry key="butaoSessaoClienteFornecedores">//*[@id="root"]/div/aside/ul/li[3]/button</entry>
+<entry key="butaoSessaoCliente">//*[@id="root"]/div/aside/div[2]/div[2]/div/ul/li[1]/a</entry>
+
+</properties>

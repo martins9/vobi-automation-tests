@@ -1,4 +1,4 @@
-package br.com.vobi.BasePage;
+package br.com.vobi.PageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,4 +20,5 @@ public class PageObject {
 	public void fecharBrowser() {
 		this.browser.quit();		
 	}
+
 }
