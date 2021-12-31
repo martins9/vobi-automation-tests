@@ -3,25 +3,24 @@ package br.com.vobi.PageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import br.com.vobi.xml.LeitorXML;
+import br.com.vobi.utils.LeitorXML;
 
-public class PaginaPrincipalPage extends PageObject{
+public class SessaoLateralPage extends PageObject{
 	
-	public PaginaPrincipalPage(WebDriver browser) {
+	public SessaoLateralPage(WebDriver browser) {
 		super(browser);
 	}
 
-	public MeusClientesPage acionarSessaoClientesFornecedores() {
+	public MeusClientesPesquisaPage acessarSessaoCadastrarNovosClientes() {
 		
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(1500);
 			browser.findElement(By.xpath(LeitorXML.leitorXML("butaoSessaoClienteFornecedores"))).click();
 			browser.findElement(By.xpath(LeitorXML.leitorXML("butaoSessaoCliente"))).click();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		return new MeusClientesPage(browser);
+		return new MeusClientesPesquisaPage(browser);
 	}
 }

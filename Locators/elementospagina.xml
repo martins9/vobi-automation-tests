@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
-<entry key="campo_email">email</entry>
-<entry key="campo_senha">password</entry>
-
-<entry key="butaoLogin">//*[@id="root"]/main/section/div[2]/div/form/button</entry>
-<entry key="butaoSessaoClienteFornecedores">//*[@id="root"]/div/aside/ul/li[3]/button</entry>
-<entry key="butaoSessaoCliente">//*[@id="root"]/div/aside/div[2]/div[2]/div/ul/li[1]/a</entry>
+	<!-- Campos e butão Login Page -->
+	<entry key="campo_email">email</entry>
+	<entry key="campo_senha">password</entry>
+	<entry key="butaoLogin">//*[@id="root"]/main/section/div[2]/div/form/button</entry>
+	
+	<!-- Campos e butão MeusClientes -->
+	<entry key="campo_NomeCompleto">//*[@id="root"]/div/div[4]/div/div[2]/div/form/div[1]/div[1]/input</entry>
+	<entry key="butaoCheck_Ativo">//*[@id="root"]/div/div[4]/div/div[2]/div/form/div[1]/div[3]/div[2]/input</entry>
+	<entry key="butaoRadio_PessoaFisica">//*[@id="root"]/div/div[4]/div/div[2]/div/form/div[1]/div[4]/div[2]/div[1]/input</entry>
+	<entry key="butaoRadio_PessoaJuridica">//*[@id="root"]/div/div[4]/div/div[2]/div/form/div[1]/div[4]/div[2]/div[3]/input</entry>
+	<entry key="campo_RG">//*[@id="root"]/div/div[4]/div/div[2]/div/form/div[1]/div[6]/input</entry>
+	<entry key="campo_Telefone">//*[@id="root"]/div/div[4]/div/div[2]/div/form/div[1]/div[8]/input</entry>
+	<entry key="campo_Endereco">//*[@id="root"]/div/div[4]/div/div[2]/div/form/div[1]/div[10]/input</entry>
+	<entry key="campo_Numero">//*[@id="root"]/div/div[4]/div/div[2]/div/form/div[1]/div[11]/input</entry>
+	<entry key="campo_Complemento">//*[@id="root"]/div/div[4]/div/div[2]/div/form/div[1]/div[12]/input</entry>
+	<entry key="campo_Bairro">//*[@id="root"]/div/div[4]/div/div[2]/div/form/div[1]/div[13]/input</entry>
+	<entry key="campo_DataNascimento">//*[@id="root"]/div/div[4]/div/div[2]/div/form/div[1]/div[2]/div[2]/div/div/input</entry>
+	<entry key="campo_CPF_CNPJ">doc</entry>
+	<entry key="campo_emailNovoCliente">//*[@id="root"]/div/div[4]/div/div[2]/div/form/div[1]/div[7]/input</entry>
+	<entry key="campo_CEP">zipcode</entry>
+	<entry key="campo_Cidade">//*[@id="root"]/div/div[4]/div/div[2]/div/form/div[1]/div[14]/input</entry>
+	<entry key="comboBox_Estado">//*[@id="rc_select_1"]</entry>
+	<entry key="campo_OBS">//*[@id="root"]/div/div[4]/div/div[2]/div/form/div[1]/div[16]/div[2]/div/div/div[1]/p</entry>
+	<entry key="butao_Salvar">//*[@id="root"]/div/div[4]/div/div[2]/div/form/div[3]/div/button</entry>
+	
+	<!-- Butões das sessões -->
+	<entry key="butaoSessaoClienteFornecedores">//*[@id="root"]/div/aside/ul/li[3]/button</entry>
+	<entry key="butaoSessaoCliente">//*[@id="root"]/div/aside/div[2]/div[2]/div/ul/li[1]/a</entry>
+	
+	<!-- Butão adicionar cliente -->
+	<entry key="butaoAdicionarCliente">//*[@id="root"]/div/div[4]/div/div[1]/header/div[2]/div/div[2]/button</entry>
 
 </properties>

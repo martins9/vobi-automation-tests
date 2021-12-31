@@ -1,4 +1,4 @@
-package br.com.vobi.xml;
+package br.com.vobi.utils;
 
 import java.io.FileInputStream;
 import java.util.Enumeration;

@@ -5,7 +5,7 @@ import java.util.ResourceBundle;
 
 import org.openqa.selenium.By;
 
-import br.com.vobi.xml.LeitorXML;
+import br.com.vobi.utils.LeitorXML;
 	
 public class LoginPage extends PageObject{
 	
@@ -24,7 +24,7 @@ public class LoginPage extends PageObject{
 		return this;
 	}
 	
-	public PaginaPrincipalPage acionarButaoLogin() {
+	public SessaoLateralPage acionarButaoLogin() {
 		try {
 			Thread.sleep(1000);
 			browser.findElement(By.xpath(LeitorXML.leitorXML("butaoLogin"))).click();
@@ -32,7 +32,7 @@ public class LoginPage extends PageObject{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return new PaginaPrincipalPage(browser);
+		return new SessaoLateralPage(browser);
 	}
 	
 }
