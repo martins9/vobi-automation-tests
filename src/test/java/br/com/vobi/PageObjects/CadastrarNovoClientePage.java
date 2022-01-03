@@ -8,23 +8,36 @@ import br.com.vobi.utils.DateUitl;
 import br.com.vobi.utils.LeitorExcel;
 import br.com.vobi.utils.LeitorXML;
 
+/**
+ *  Classe responsável pelo Page Object Cadastrar Novo Cliente
+ * @author saulo
+ *
+ */
 public class CadastrarNovoClientePage extends PageObject {
-
+	
+	/**
+	 * Construtor da classe
+	 * @param browser
+	 */
 	public CadastrarNovoClientePage(WebDriver browser) {
 		super(browser);
 	}
 	
-	
+	/**
+	 * Metodo responsavel por preencher o formulario de um novo cliente
+	 * @return CadastrarNovoClientePage
+	 * @throws InterruptedException
+	 */
 	public CadastrarNovoClientePage preencherFormularioNovoCliente() throws InterruptedException {
 		
 		Thread.sleep(1000);
 		browser.findElement(By.xpath(LeitorXML.leitorXML("campo_NomeCompleto"))).sendKeys(LeitorExcel.obterElementoExcel("Nome Completo"));
 		Thread.sleep(500);
-		if(LeitorExcel.obterElementoExcel("Ativo?").equals("Sim") && !browser.findElement(By.xpath(LeitorXML.leitorXML("butaoCheck_Ativo"))).isSelected()) {
-			browser.findElement(By.xpath(LeitorXML.leitorXML("butaoCheck_Ativo"))).click();
+		if(LeitorExcel.obterElementoExcel("Ativo?").equals("Sim") && !browser.findElement(By.xpath(LeitorXML.leitorXML("botaoCheck_Ativo"))).isSelected()) {
+			browser.findElement(By.xpath(LeitorXML.leitorXML("botaoCheck_Ativo"))).click();
 		}
-		else if (LeitorExcel.obterElementoExcel("Ativo?").equals("Nao") && browser.findElement(By.xpath(LeitorXML.leitorXML("butaoCheck_Ativo"))).isSelected()) {
-			browser.findElement(By.xpath(LeitorXML.leitorXML("butaoCheck_Ativo"))).click();
+		else if (LeitorExcel.obterElementoExcel("Ativo?").equals("Nao") && browser.findElement(By.xpath(LeitorXML.leitorXML("botaoCheck_Ativo"))).isSelected()) {
+			browser.findElement(By.xpath(LeitorXML.leitorXML("botaoCheck_Ativo"))).click();
 		}
 		
 		Thread.sleep(1000);
@@ -32,14 +45,14 @@ public class CadastrarNovoClientePage extends PageObject {
 		browser.findElement(By.xpath(LeitorXML.leitorXML("campo_DataNascimento"))).sendKeys(Keys.ESCAPE);
 		
 		if(LeitorExcel.obterElementoExcel("Pessoa Fisica") !=null) {
-			if(!browser.findElement(By.xpath(LeitorXML.leitorXML("butaoRadio_PessoaFisica"))).isSelected()){
-				browser.findElement(By.xpath(LeitorXML.leitorXML("butaoRadio_PessoaFisica"))).click();
+			if(!browser.findElement(By.xpath(LeitorXML.leitorXML("botaoRadio_PessoaFisica"))).isSelected()){
+				browser.findElement(By.xpath(LeitorXML.leitorXML("botaoRadio_PessoaFisica"))).click();
 				browser.findElement(By.id(LeitorXML.leitorXML("campo_CPF_CNPJ"))).sendKeys(LeitorExcel.obterElementoExcel("CPF"));
 			}
 		}
 		else if (LeitorExcel.obterElementoExcel("Pessoa Juridica") !=null) {
-			if(!browser.findElement(By.xpath(LeitorXML.leitorXML("butaoRadio_PessoaJuridica"))).isSelected()) {
-				browser.findElement(By.xpath(LeitorXML.leitorXML("butaoRadio_PessoaJuridica"))).click();
+			if(!browser.findElement(By.xpath(LeitorXML.leitorXML("botaoRadio_PessoaJuridica"))).isSelected()) {
+				browser.findElement(By.xpath(LeitorXML.leitorXML("botaoRadio_PessoaJuridica"))).click();
 				browser.findElement(By.id(LeitorXML.leitorXML("campo_CPF_CNPJ"))).sendKeys(LeitorExcel.obterElementoExcel("CNPJ"));
 			}
 		}
@@ -62,9 +75,13 @@ public class CadastrarNovoClientePage extends PageObject {
 		
 		return this;
 	}
-
-	public MeusClientesPesquisaPage acionarButaoSalvar() {
-		browser.findElement(By.xpath(LeitorXML.leitorXML("butao_Salvar"))).click();
+	
+	/**
+	 *  Método responsável por acionar o botão de Salvar que cadastra um novo cliente
+	 * @return MeusClientesPesquisaPage
+	 */
+	public MeusClientesPesquisaPage acionarBotaoSalvar() {
+		browser.findElement(By.xpath(LeitorXML.leitorXML("botao_Salvar"))).click();
 		return new MeusClientesPesquisaPage(browser);
 	}
 }
