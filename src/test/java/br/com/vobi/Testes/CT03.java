@@ -13,7 +13,7 @@ import br.com.vobi.utils.LoadData;
 /**
  *<pre>
  *Cenário de Teste: Cadastrar um novo cliente
- *CT03: Realizar o cadastramento de um novo cliente dados nulos.
+ *CT03: Realizar o cadastramento de um novo cliente dados nulos via Web.
  *@author Saulo Martins Soares da Fonseca
  *<pre>
  *

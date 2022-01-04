@@ -13,7 +13,7 @@ import br.com.vobi.utils.LoadData;
 /**
  *<pre>
  *Cenário de Teste: Cadastrar um novo cliente
- *CT02: Realizar o cadastramento de um novo cliente com dados inválidos.
+ *CT02: Realizar o cadastramento de um novo cliente com dados inválidos via Web.
  *@author Saulo Martins Soares da Fonseca
  *<pre>
  *

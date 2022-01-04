@@ -14,7 +14,7 @@ import br.com.vobi.utils.LoadData;
 /**
  *<pre>
  * Cenário de Teste: Cadastrar um novo cliente
- * CT01: Realizar o cadastramento de um novo cliente com dados válidos.
+ * CT01: Realizar o cadastramento de um novo cliente com dados válidos via Web.
  * @author Saulo Martins Soares da Fonseca
  *<pre>
  *
