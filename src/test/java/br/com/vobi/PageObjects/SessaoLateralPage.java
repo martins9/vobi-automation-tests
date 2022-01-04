@@ -7,7 +7,7 @@ import br.com.vobi.utils.LeitorXML;
 
 /**
  *  Classe responsável pelo PageObject Sessao Lateral
- * @author saulo
+ * @author Saulo Martins Soares da Fonseca
  *
  */
 public class SessaoLateralPage extends PageObject{

@@ -8,7 +8,7 @@ import br.com.vobi.utils.LeitorXML;
 
 /**
  *  Classe responsável pelo PageObject Login
- * @author saulo
+ * @author Saulo Martins Soares da Fonseca
  *
  */
 public class LoginPage extends PageObject{

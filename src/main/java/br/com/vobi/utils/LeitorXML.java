@@ -26,7 +26,7 @@ public class LeitorXML {
 			}
 		}
 		catch (Exception e) {
-			// TODO: handle exception
+			e.getMessage();
 		}
 		return value;
 		

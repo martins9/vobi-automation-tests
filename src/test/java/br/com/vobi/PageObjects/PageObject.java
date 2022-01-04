@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 /**
  *  Classe responsável por métodos e características em comum que serão 
  *  herdadas por outras classes
- * @author saulo
+ * @author Saulo Martins Soares da Fonseca
  *
  */
 public class PageObject {
@@ -26,7 +26,8 @@ public class PageObject {
 			this.browser = browser;
 		}
 	}
-	
+
+
 	/**
 	 * Metodo que fechar o browser
 	 */
